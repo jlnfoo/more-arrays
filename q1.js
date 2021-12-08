@@ -15,7 +15,9 @@ for (let i = 0; i < mockData.length; i++) {
   for (let j = 0; j < mockData[i].portfolio.length; j++) {
     //loops through each holdings/stocks
     for (let k = 0; k < mockData[i].portfolio[j].holdings.length; k++) {
-      if (
+      if (!mockData[i].portfolio[j].sectorIsProfitable) {
+        break;
+      } else if (
         mockData[i].portfolio[j].sectorIsProfitable &&
         mockData[i].portfolio[j].holdings[k].isProfitable
       ) {
