@@ -8,3 +8,17 @@ i.e.
 // [LOG]: Trevor Fortman - Technology
 // [LOG]: Yorker Hogbin - Transportation
 */
+
+for (let i = 0; i < mockData.length; i++) {
+  const person = mockData[i];
+
+  for (let j = 0; j < person.portfolio.length; j++) {
+    if (person.portfolio[j].sectorIsProfitable) {
+      const profitablePerson =
+        `${person.firstName}` + " " + `${person.lastName}`;
+      const profitableSector = `${person.portfolio[j].sector}`;
+
+      console.log(profitablePerson + " - " + profitableSector);
+    }
+  }
+}
