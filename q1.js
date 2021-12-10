@@ -9,20 +9,17 @@ i.e.
 // [LOG]: Yorker Hogbin - Transportation
 */
 
-const questionOneSolution = (mockData) => {
-  for (let i = 0; i < mockData.length; i++) {
-    const person = mockData[i];
+for (let i = 0; i < mockData.length; i++) {
+  const person = mockData[i];
 
-    for (let j = 0; j < person.portfolio.length; j++) {
-      if (person.portfolio[j].sectorIsProfitable) {
-        const profitablePerson =
-          `${person.firstName}` + " " + `${person.lastName}`;
-        const profitableSector = `${person.portfolio[j].sector}`;
+  for (let j = 0; j < person.portfolio.length; j++) {
+    if (person.portfolio[j].sectorIsProfitable) {
+      const profitablePerson =
+        `${person.firstName}` + " " + `${person.lastName}`;
+      const profitableSector = `${person.portfolio[j].sector}`;
 
-        console.log(profitablePerson + " - " + profitableSector);
-      }
+      console.log(profitablePerson + " - " + profitableSector);
     }
+    console.log("-");
   }
-};
-
-module.exports = { questionOneSolution };
+}

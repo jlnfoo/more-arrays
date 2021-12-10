@@ -50,14 +50,9 @@ describe("#questionOneSolution", () => {
     const output2 = questionOneSolution(data);
     expect(output2).toBe("Healthcare");
   });
+
+  it("- returns - if sector profitable is false", () => {
+    const output3 = questionOneSolution(falseydata);
+    expect(output3).toBe("-");
+  });
 });
-
-// what if it's not required to return anything if false, how to test?
-//   it("- does not give me full name if sector profitable is false"),
-//     () => {
-//       const output3 = questionOneSolution(falseydata);
-//   expect(output3).toBe;
-//     });
-
-//   it("- does not give me sector name if sector profitable is false"), () => {};
-// });
