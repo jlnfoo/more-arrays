@@ -1,6 +1,5 @@
 const { questionOne } = require("./q1");
 
-//can you reference to actual mockData.json file to get the data or is it recommended to declare new mock data as below?
 const data = {
   id: 6,
   firstName: "Evelin",
