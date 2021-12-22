@@ -249,9 +249,9 @@ const questionOne = () => {
           `${person.firstName}` + " " + `${person.lastName}`;
         const profitableSector = `${person.portfolio[j].sector}`;
 
-        console.log(profitablePerson + " - " + profitableSector);
+        return `${profitablePerson}` + " - " + `${profitableSector}`;
       }
-      console.log("-");
+      return "-";
     }
   }
 };
