@@ -1,6 +1,6 @@
 const { questionOne } = require("./q1");
 
-const data = {
+const mockData = {
   id: 6,
   firstName: "Evelin",
   lastName: "Kintzel",
@@ -36,16 +36,16 @@ const falseyData = {
 
 describe("#questionOne", () => {
   it("- gives me the full name", () => {
-    expect(questionOne(data)).toEqual("Evelin Kintzel");
+    expect(questionOne(mockData)).toEqual("Evelin Kintzel");
   });
 
   it("- gives me the full name if sector profitable is true", () => {
-    const output1 = questionOne(data);
+    const output1 = questionOne(mockData);
     expect(output1).toBe("Evelin Kintzel");
   });
 
   it("- gives me the sector name if sector profitable is true", () => {
-    const output2 = questionOne(data);
+    const output2 = questionOne(mockData);
     expect(output2).toBe("Healthcare");
   });
 
