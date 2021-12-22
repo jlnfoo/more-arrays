@@ -1,0 +1,22 @@
+{
+  "name": "more-arrays",
+  "version": "1.0.0",
+  "description": "",
+  "main": "q1.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlnfoo/more-arrays.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlnfoo/more-arrays/issues",
+    "dependencies": {
+      "jest": "^27.4.3"
+  }
+  },
+  "homepage": "https://github.com/jlnfoo/more-arrays#readme"
+}
