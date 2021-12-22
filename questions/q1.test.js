@@ -1,4 +1,4 @@
-const { questionOneSolution } = require("./q1");
+const { questionOne } = require("./q1");
 
 //can you reference to actual mockData.json file to get the data or is it recommended to declare new mock data as below?
 const data = {
@@ -35,24 +35,23 @@ const falseyData = {
   ],
 };
 
-describe("#questionOneSolution", () => {
+describe("#questionOne", () => {
   it("- gives me the full name", () => {
-    const output = questionOneSolution(data);
-    expect(output).toBe("Evelin Kintzel");
+    expect(questionOne(data)).toEqual("Evelin Kintzel");
   });
 
   it("- gives me the full name if sector profitable is true", () => {
-    const output1 = questionOneSolution(data);
+    const output1 = questionOne(data);
     expect(output1).toBe("Evelin Kintzel");
   });
 
   it("- gives me the sector name if sector profitable is true", () => {
-    const output2 = questionOneSolution(data);
+    const output2 = questionOne(data);
     expect(output2).toBe("Healthcare");
   });
 
   it("- returns - if sector profitable is false", () => {
-    const output3 = questionOneSolution(falseydata);
+    const output3 = questionOne(falseyData);
     expect(output3).toBe("-");
   });
 });
