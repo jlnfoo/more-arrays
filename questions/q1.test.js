@@ -36,7 +36,7 @@ const falseyData = {
 
 describe("#questionOne", () => {
   it("- gives me the full name", () => {
-    expect(questionOne(mockData)).toEqual("Evelin Kintzel");
+    expect(questionOne(mockData)).toBe("Evelin Kintzel");
   });
 
   it("- gives me the full name if sector profitable is true", () => {
